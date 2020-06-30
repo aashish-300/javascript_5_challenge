@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>challenge 1</title>
+    <link rel="stylesheet" href="challenge.css">
+
+</head>
+<body>
+    <center>
+        <div class="container">
+                <h1>Challenge 1: Your Age in Days</h1>
+            <div class="line"></div>
+            <div class="flex-container">
+                <div><button class="btn btn-primary" onclick="ageindays()" >Click me</button></div>
+               <div><button class = 'btn btn-danger' onclick="reset()">reset</button></div>
+            </div>
+            <div class="line"></div>
+            <div id="result"></div>
+        </div>
+<!--            challenge 2-->
+        <div class="container-1">
+            <br>
+            <div class="line"></div>
+            <h1>Challenge 2: Cat Generator</h1>
+            <div class="line"></div><br>
+            <div><button class="btn btn-success" onclick="generatecat()">Generate Cat</button></div>
+            <br>
+            <div class="line"></div>
+            <div class="cat" id="generateCat">
+            </div>
+         </div>
+        <br>
+
+<!--        challenge paper scissor rock-->
+        <div class="container-1">
+            <h1>Challenge 3: Rock, Paper , Scissors</h1>
+            <div class="line"></div>
+            <br>
+            <div class="images" id="image">
+                <div class="hoveer"><img src="rock.jpg" id="rock" onclick="rpsGame(this)"></div>
+                <div class="hoveer"><img src="paper.jpg" id="paper" onclick="rpsGame(this)"></div>
+                <div class="hoveer"><img src="scissors.jpg" id="scissors" onclick="rpsGame(this)"></div>
+             </div><br>
+        </div>
+        <br><br>
+
+
+<!--        challenge 4: Change the color of buttons-->
+        <div class="container-1">
+            <div ><h1>Challenge 4:Change the color of buttons</h1></div>
+             <div class="line"></div>
+            <div class="flex-container">
+                <form action="">
+                    <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                        <option value="random">Random</option>
+                        <option value="green">Green</option>
+                        <option value="red">Red</option>
+                        <option value="reset">Reset</option>
+                    </select>
+                </form>
+
+                <button class="btn btn-primary">Facebook!</button>
+                <button class="btn btn-success">What's app!</button>
+                <button class="btn btn-warning">Google!</button>
+                <button class="btn btn-danger">Yahoo!</button>
+
+            </div>
+
+        </div><br>
+<!--        Challenge 5: Blackjack-->
+        <div class="container-1">
+            <div><h2>Challenge 5:Blackjack</h2>
+                <h3><span class="result" id="blackjack-result">Let's play</span></h3>
+            </div>
+<!--            <div class="line"></div>-->
+            <div class="flex-row-one" >
+                <div class="flex-column-1" id="your-box"><h3>You:<span id="your-blackjack-result"> 0</span></h3></div>
+                <div class="flex-column-2" id="dealer-box"><h3>Dealer:<span id="dealer-blackjack-result" > 0</span></h3></div>
+            </div>
+            <div class="flex-blackjack-row-2">
+                <div class="blackjack-button" >
+                    <button class="btn btn-primary mar-2" id="blackjackHit">Hit</button>
+                    <button class="btn btn-warning" id="blackjackStand">Stand</button>
+                    <button class="btn btn-danger" id="blackjackDeal">Deal</button>
+                </div>
+            </div>
+            <div>
+                <div class="line"></div>
+                <table>
+                    <tr>
+                        <th>Wins</th>
+                        <th>loses</th>
+                        <th>draw</th>
+                    </tr>
+                    <tr>
+                        <td><span class="yourData">0</span></td>
+                        <td><span class="dealerData">0</span></td>
+                        <td><span class="drewData">0</span></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </center>
+    <script src="challenge-1.js"></script>
+</body>
+</html>
